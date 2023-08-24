@@ -435,51 +435,6 @@
     color: var(--blanco);
   }
   
-  /* SECCION CONTACTO*/
-  
-  .contact h2 {
-    margin-bottom: 3rem;
-  }
-  
-  .contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-  
-  }
-  
-  .contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .contact form .input-box input,
-  .contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--rojo);
-    border-radius: .8rem;
-    margin: .7rem 0;
-  }
-  
-  .contact form .input-box input {
-    width: 49%;
-  }
-  
-  .contact form textarea {
-    resize: none;
-  }
-  
-  .contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
-  }
-  .contact .borde{
-    border: 2px solid red;
-  }
   
   /* BREAKPOINTS*/
   @media (max-width: 1200px) {
@@ -496,11 +451,6 @@
     .texto-encabezado h2 {
       font-size: 4rem;
     }
-  
-    .contact {
-      min-height: auto;
-    }
-  
     .footer {
       padding: 2rem 3%;
     }
@@ -541,20 +491,7 @@
     .texto-encabezado h2 {
       font-size: 2.2rem;
     }
-  
-    /* .home{
-        flex-direction: column;
-      }
-      .home-content h3{
-        font-size: 2.6rem;
-      }
-      .home-content h1{
-        font-size: 5rem;
-      }
-      .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-      }*/
+
     .about {
       display: flex;
       flex-direction: column;
@@ -583,28 +520,13 @@
       justify-content: space-between;
       margin-bottom: 4rem;
     }
-  
-    /* .skills h2{
-        margin-bottom:3rem ;
-      }
-      .portafolio h2{
-        margin-bottom: 3rem;
-      }
-      .portafolio-container{
-        grid-template-columns: repeat(2,1fr);
-      }  */
   }
   
   @media (max-width: 450px) {
     html {
       font-size: 50%;
     }
-  
-    .contact form .input-box input {
-      width: 100%;
-    }
-  
-  
+ 
   }
   
   @media (max-width: 365px) {
