@@ -390,14 +390,14 @@
     font-size: 1.5rem;
   }
   
-  .close {
+  .close, .close2, .close3, .close4 {
     float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
   }
   
-  .close2 {
+  /* .close2 {
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -409,6 +409,12 @@
     font-weight: bold;
     cursor: pointer;
   }
+  .close4 {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  } */
   .strike {
     text-decoration: line-through;
     color: var(--rojo);
