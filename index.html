@@ -22,7 +22,367 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
 </head>
+
 <body>
-   MI PRIMER PROYECTO
+  <!-- LOADING -->
+  <div class="lds-hourglass loader" id="loader"></div>
+  <!-- MUSICA DE FONDO -->
+  <audio id="background-music" autoplay loop>
+    <source src="audio/musica.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+  <!-- NAVBAR -->
+  <header>
+    <div class="header">
+      <h2><span class="rojo">Riqueza Gastronómica</span></h2>
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Inicio</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#dishes">Platillos</a>
+      </nav>
+    </div>
+  </header>
+<!-- SECCION HOME -->
+  <section class="home" id="home">
+    <div class="contenido-header">
+      <div class="contenedor-encabezado">
+        <div class="texto-encabezado">
+          <h2>Vuelvete <span class="multiple-text"></span></h2>
+        </div>
+        <video autoplay loop muted>
+          <source src="images/video.mp4">
+        </video> 
+      </div>
+    </div>
+  </section>
+  <!-- SECCION ABOUT -->
+  <section class="about contenedor" id="about">
+    <div class="about-content">
+      <h2 class="heading">Riqueza Gastronómica Peruana</h2>
+      <p>Explorar nuevas recetas en la comodidad de tu hogar puede ser una experiencia gratificante y emocionante.</p>
+      <p>Desde platillos reconfortantes que evocan recuerdos hasta creaciones audaces que despiertan tus papilas gustativas, la
+        cocina casera ofrece un lienzo ilimitado para la creatividad culinaria. Ya sea que te aventures con ingredientes
+        locales o te atrevas con influencias globales, cada receta que creas refleja el cariño y la dedicación que pones
+        en tu cocina.</p> 
+    </div>
+    <div class="about-img">
+      <div class="img1">
+        <img data-src="images/nosotros1.webp" alt="">
+      </div>
+      <div class="img2">
+        <img data-src="images/nosotros2.webp" alt="">
+        <img data-src="images/nosotros3.webp" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- SECCION DISHES -->
+  <section class="dishes contenedor" id="dishes">
+    <h2 class="texto-platillos">Recetas</h2>
+    <div class="botones-platillos">
+      <button class="todos btn btn-verde active">Todos</button>
+      <button class="entradas btn btn-verde">Entradas</button>
+      <button class="principales btn btn-verde">Principales</button>
+      <button class="pizza btn btn-verde">Pasta y Pizza</button>
+      <button class="postres btn btn-verde">Postres</button>
+    </div>
+    <div class="platillos">
+      <div class="platillo" data-platillos="entrada">
+        <img data-src="images/ceviche.jpg" alt="entrada">
+        <h2>Ceviche de pescado</h2>
+        <p>Refrescante, ácido, delicioso</p>
+        <div class="precio">
+          <p>6 a 8 porciones</p>
+          <button id="openModalBtn" class="btn btn-rojo">receta</button>
+        </div>
+        <!-- MODAL DE PLATO N°1: CEVICHE-->
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text">1 kilo de pescado blanco</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text">1 taza de jugo de limón</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text">1 diente de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text">Ají molido al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text">1 cebolla grande cortada a lo largo</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text">2 ajíes sin pepas y cortada en tiritas</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion" class="opcionRadio" value="opcion8">
+              <span class="opcionText" id="opcion8Text">Apio picado al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion" class="opcionRadio" value="opcion9">
+              <span class="opcionText" id="opcion9Text">Culantro picado al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion" class="opcionRadio" value="opcion10">
+              <span class="opcionText" id="opcion10Text">Hojas de lechuga y choclos para servir</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion" class="opcionRadio" value="opcion11">
+              <span class="opcionText" id="opcion11Text">1 camote grande hervido</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1. Lavar el pescado y cortarlo en cuadrados.</p>
+            <p>2. Sazonar con el jugo de limón, el ajo, el ají molido, la sal y la pimienta. 
+              Dejar reposando durante una hora.</p>
+            <p>3. Añadir la cebolla, el ají, el apio y el culantro. Dejar una hora más.</p>
+            <p>4. Servir acompañado de lechuga, choclos y trozos de camote.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <!-- BOTON PARA DESCARGAR PDF-->
+            <a id="downloadPdfLink" class="btn btn-rojo">Descargar PDF</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- MODAL -->
+
+      <div class="platillo" data-platillos="entrada">
+        <img data-src="images/cuy.jpg" alt="entrada">
+        <h2>Rocotos rellenos</h2>
+        <p>Picante, sabroso y tradicional</p>
+        <div class="precio">
+          <p>8 porciones</p>
+          <button id="openModalBtn2" class="btn btn-rojo">receta</button>
+        </div>
+        <div id="myModal2" class="modal">
+          <div class="modal-content">
+            <span class="close2">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion2" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text2">16 rocotos</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion2" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text2">2 cebollas picadas</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion2" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text2">1 diente de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion2" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text2">1/4 de kilo de queso fresco desmenuzado</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion2" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text2">3 huevos batidos</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion2" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text2">1/2 taza de leche evaporada</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion2" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text2">8 papas peladas, cocidas y partidas en rodajas</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion2" class="opcionRadio" value="opcion8">
+              <span class="opcionText" id="opcion8Text2">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion2" class="opcionRadio" value="opcion9">
+              <span class="opcionText" id="opcion9Text2">Perejil finamente picado al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion2" class="opcionRadio" value="opcion10">
+              <span class="opcionText" id="opcion10Text2">Aceite, cantidad necesaria</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1.Quitar las tapas d elos rocotos, retirar semillas y dejarlos 24 horas en agua con sal, cambiando varias veces al agua.
+              Luego lavarlos bein con agua caliente y escurrilos boca abajo.</p>
+            <p>2. Mezclar el ajo molido con la cebolla, el queso, la leche evaporada, los huevos, la sal y la pimienta.</p>
+            <p>3. Rellenar los rocotos con esta preparación y acomodarlos en un recipiente refactario aceitado con las papas cocidas.
+              Espolvorear perejil picado. </p>
+            <p>4. Llevar al horno a temperatura media aproximadamente 40 minutos.</p>
+            <p>5. Retira del horno y listo.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <a id="downloadPdfLink2" class="btn btn-rojo">Descargar PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="platillo" data-platillos="entrada">
+        <img data-src="images/cuy.jpg" alt="entrada">
+        <h2>Anticuchos de corazón</h2>
+        <p>Sabroso, tradicional y asado</p>
+        <div class="precio">
+          <p>10 porciones</p>
+          <button id="openModalBtn3" class="btn btn-rojo">receta</button>
+        </div>
+        <div id="myModal3" class="modal">
+          <div class="modal-content">
+            <span class="close3">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion3" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text2">16 rocotos</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion3" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text2">2 cebollas picadas</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion3" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text2">1 diente de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion3" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text2">1/4 de kilo de queso fresco desmenuzado</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion3" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text2">3 huevos batidos</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion3" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text2">1/2 taza de leche evaporada</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion3" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text2">8 papas peladas, cocidas y partidas en rodajas</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion3" class="opcionRadio" value="opcion8">
+              <span class="opcionText" id="opcion8Text2">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion3" class="opcionRadio" value="opcion9">
+              <span class="opcionText" id="opcion9Text2">Perejil finamente picado al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion3" class="opcionRadio" value="opcion10">
+              <span class="opcionText" id="opcion10Text2">Aceite, cantidad necesaria</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1.Quitar las tapas d elos rocotos, retirar semillas y dejarlos 24 horas en agua con sal, cambiando varias veces al agua.
+              Luego lavarlos bein con agua caliente y escurrilos boca abajo.</p>
+            <p>2. Mezclar el ajo molido con la cebolla, el queso, la leche evaporada, los huevos, la sal y la pimienta.</p>
+            <p>3. Rellenar los rocotos con esta preparación y acomodarlos en un recipiente refactario aceitado con las papas cocidas.
+              Espolvorear perejil picado. </p>
+            <p>4. Llevar al horno a temperatura media aproximadamente 40 minutos.</p>
+            <p>5. Retira del horno y listo.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <a id="downloadPdfLink2" class="btn btn-rojo">Descargar PDF</a>
+          </div>
+        </div>
+      </div>
+      <div class="platillo" data-platillos="principales">
+        <img data-src="images/pasta1.webp" alt="principales">
+        <h2>Quinoa</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button class="btn btn-rojo">receta</button>
+        </div>
+      </div>
+
+      <div class="platillo" data-platillos="principales">
+        <img data-src="images/pasta1.webp" alt="principales">
+        <h2>Quinoa</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button class="btn btn-rojo">receta</button>
+        </div>
+      </div>
+      <div class="platillo" data-platillos="principales">
+        <img data-src="images/pasta1.webp" alt="principales">
+        <h2>Quinoa</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button class="btn btn-rojo">receta</button>
+        </div>
+      </div>
+      <div class="platillo" data-platillos="pizza">
+        <img data-src="images/pizza1.webp" alt="principales">
+        <h2>Quinoa</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button id="openModalBtn2" class="btn btn-rojo">receta</button>
+        </div>
+        <!-- MODAL 2-->
+        
+      </div>
+      <div class="platillo" data-platillos="pizza">
+        <img data-src="images/pizza2.webp" alt="principales">
+        <h2>Quinoa</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button class="btn btn-rojo">receta</button>
+        </div>
+      </div>
+      <div class="platillo" data-platillos="postre">
+        <img data-src="images/postres1.webp" alt="principales">
+        <h2>Quinoa</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button class="btn btn-rojo">receta</button>
+        </div>
+      </div>
+      <div class="platillo" data-platillos="postre">
+        <img data-src="images/postres2.webp" alt="principales">
+        <h2>Quinoa</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button class="btn btn-rojo">receta</button>
+        </div>
+      </div>
+      <div class="platillo" data-platillos="postre">
+        <img data-src="images/postres3.webp" alt="principales">
+        <h2>Quinoa</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button class="btn btn-rojo">receta</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- FOOTER-->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2023 by Amalia Cornejo | Reservados todos los derechos </p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+  
+  <!-- SCRIPTS-->
+  <!-- SCROLL REVEALS-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!--TYPED JS-->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- CUSTOM JS-->
+  <script src="js/app.js"></script>
+
 </body>
+
 </html>
