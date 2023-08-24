@@ -269,5 +269,17 @@ downloadPdfLink2.addEventListener("click", function () {
     a.click();
     document.body.removeChild(a);
 });
+downloadPdfLink3.addEventListener("click", function () {
+   
+    var pdfUrl = "recetas/cuy.pdf";
+    // enlace temporal para descargar el archivo PDF
+    var a = document.createElement("a");
+    a.href = pdfUrl;
+    a.download = "receta-cuy.pdf"; // nombre del archivo
+    a.style.display = "none";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+});
 
 
