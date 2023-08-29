@@ -146,6 +146,13 @@ var span4 = modal4.querySelector(".close4");
 var opcionTexts4 = modal4.querySelectorAll(".opcionText");
 var radioOptions4 = modal4.querySelectorAll(".opcionRadio");
 var downloadPdfLink4 = modal4.querySelector("#downloadPdfLink4");
+//MODAL 4
+var modal5 = document.getElementById("myModal5");
+var btn5 = document.getElementById("openModalBtn5");
+var span5 = modal5.querySelector(".close5");
+var opcionTexts5 = modal5.querySelectorAll(".opcionText");
+var radioOptions5 = modal5.querySelectorAll(".opcionRadio");
+var downloadPdfLink5 = modal5.querySelector("#downloadPdfLink5");
 
 function openModal(modal) {
     modal.style.display = "block";
@@ -183,9 +190,17 @@ btn4.onclick = function () {
 span4.onclick = function () {
     closeModal(modal4, radioOptions4, opcionTexts4);
 }
+btn5.onclick = function () {
+    openModal(modal5);
+}
+
+// Cerrar el modal cuando se haga clic en la "x" de cierre
+span5.onclick = function () {
+    closeModal(modal5, radioOptions5, opcionTexts5);
+}
 // Cerrar el modal si se hace clic fuera de él
 window.onclick = function (event) {
-    if (event.target == modal) {
+    if (event.target == modal1) {
         closeModal(modal1, radioOptions1, opcionTexts1);
     } 
     else if (event.target == modal2) {
@@ -196,6 +211,9 @@ window.onclick = function (event) {
     }
     else if (event.target == modal4) {
         closeModal(modal4, radioOptions4, opcionTexts4);
+    }
+    else if (event.target == modal5) {
+        closeModal(modal5, radioOptions5, opcionTexts5);
     }
 }
 function closeModal(modal, radioOptions, optionTexts) {
@@ -240,6 +258,12 @@ radioOptions4.forEach(function (radioOption) {
     radioOption.addEventListener("change", function () {
         var selectedValue = modal4.querySelector('input[name="opcion4"]:checked').value;
         applyStyles(selectedValue, opcionTexts4);
+    });
+});
+radioOptions5.forEach(function (radioOption) {
+    radioOption.addEventListener("change", function () {
+        var selectedValue = modal5.querySelector('input[name="opcion5"]:checked').value;
+        applyStyles(selectedValue, opcionTexts5);
     });
 });
 function applyStyles(selectedValue, optionTexts) {
@@ -318,5 +342,16 @@ downloadPdfLink4.addEventListener("click", function () {
     a.click();
     document.body.removeChild(a);
 });
-
+downloadPdfLink5.addEventListener("click", function () {
+   
+    var pdfUrl = "recetas/cuy.pdf";
+    // enlace temporal para descargar el archivo PDF
+    var a = document.createElement("a");
+    a.href = pdfUrl;
+    a.download = "receta-cuy.pdf"; // nombre del archivo
+    a.style.display = "none";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+});
 
