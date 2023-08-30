@@ -23,7 +23,6 @@ const imagenes = document.querySelectorAll('img');
 const btnTodos = document.querySelector('.todos');
 const btnEntradas = document.querySelector('.entradas');
 const btnPrincipales = document.querySelector('.principales');
-const btnPizza = document.querySelector('.pizza');
 const btnPostres = document.querySelector('.postres');
 const contenedorPlatillos = document.querySelector('.platillos');
 menuIcon.onclick = () => {
@@ -80,12 +79,11 @@ const platillos = () => {
     const entradas = platillosArreglo.filter(entrada => entrada.getAttribute('data-platillos') === 'entrada');
     const principaless = platillosArreglo.filter(principales => principales.getAttribute('data-platillos') === 'principales');
 
-    const pizzas = platillosArreglo.filter(pizza => pizza.getAttribute('data-platillos') === 'pizza');
     const postres = platillosArreglo.filter(postre => postre.getAttribute('data-platillos') === 'postre');
-    mostrarPlatillos(entradas, principaless, pizzas, postres, platillosArreglo);
+    mostrarPlatillos(entradas, principaless, postres, platillosArreglo);
 
 }
-const mostrarPlatillos = (entradas, principaless, pizzas, postres, todos) => {
+const mostrarPlatillos = (entradas, principaless, postres, todos) => {
     btnEntradas.addEventListener('click', () => {
         limpiarHtml(contenedorPlatillos);
         entradas.forEach(entrada => contenedorPlatillos.appendChild(entrada));
@@ -93,11 +91,6 @@ const mostrarPlatillos = (entradas, principaless, pizzas, postres, todos) => {
     btnPrincipales.addEventListener('click', () => {
         limpiarHtml(contenedorPlatillos);
         principaless.forEach(principales => contenedorPlatillos.appendChild(principales));
-
-    });
-    btnPizza.addEventListener('click', () => {
-        limpiarHtml(contenedorPlatillos);
-        pizzas.forEach(pizza => contenedorPlatillos.appendChild(pizza));
 
     });
     btnPostres.addEventListener('click', () => {
