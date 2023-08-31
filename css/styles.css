@@ -390,7 +390,9 @@
     font-size: 1.5rem;
   }
   
-  .close, .close2, .close3, .close4, .close5, .close6 {
+  .close, .close2, .close3, .close4, .close5, .close6, .close7, .close8,
+  .close9, .close10, .close11, .close12, .close13, .close14, .close15, .close16, .close17, .close18
+   {
     float: right;
     font-size: 28px;
     font-weight: bold;

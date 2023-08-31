@@ -85,6 +85,7 @@
       <button class="principales btn btn-verde">Principales</button>
       <button class="postres btn btn-verde">Postres</button>
     </div>
+     <!-- -------------------    PLATILLOS ENTRADA ------------------------------------ -->
     <div class="platillos">
       <div class="platillo" data-platillos="entrada">
         <img data-src="images/ceviche.jpg" alt="entrada">
@@ -429,55 +430,644 @@
             </div>
         </div>
       </div>
-      
+      <!-- -------------------    PLATILLOS PRINCIPALES ------------------------------------ -->
+      <!-- PLATILLO PRINCIPAL 1-->
       <div class="platillo" data-platillos="principales">
         <img data-src="images/pasta1.webp" alt="principales">
-        <h2>Quinoa</h2>
+        <h2>Principal 1</h2>
         <p>Quinua, cerezas, tomate</p>
         <div class="precio">
           <p>$40</p>
           <button id="openModalBtn7" class="btn btn-rojo">receta</button>
         </div>
+         <!-- MODAL PRINCIPAL N°7: -->
+        <div id="myModal7" class="modal">
+          <div class="modal-content">
+            <span class="close7">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion7" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text7">2 corazones de res</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion7" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text7">1 cucharada de ají molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion7" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text7">2 cucharadas de ají panca molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion7" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text7">1/2 cucharadita de comino en polvo</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion7" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text7">2 cucharadas de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion7" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text7">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion7" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text7">Vinagre, cantidad suficiente para cubrirlos</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1. Limpiar los corazones de nervios y cortarlos en torozos pequeños.</p>
+            <p>2. Colocar en un tazón los corazones con sal, pimienta, ajos, comino y los ajíes.</p>
+            <p>3. Cubrir con vinagre. Dejar macerar de un día para otro. </p>
+            <p>4. Al momento de la preparacción escurrir los trozos de corazón y colocarlos en cañitas o alambres (pueden ir de 4 a 6 porciones).</p>
+            <p>5. Cocer a la brasa y con una brocheta de panca de cochlo, ir impregnando los ingredientes macerados</p>
+            <p>6. Servir acompañados de choclo y listo.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <a id="downloadPdfLink7" class="btn btn-rojo">Descargar PDF</a>
+          </div>
+        </div>
       </div>
-      <!-- MODAL PRINCIPAL N°7: -->
+      <!-- PLATILLO PRINCIPAL 2-->   
       <div class="platillo" data-platillos="principales">
         <img data-src="images/pasta1.webp" alt="principales">
-        <h2>Quinoa</h2>
+        <h2>Principal 2</h2>
         <p>Quinua, cerezas, tomate</p>
         <div class="precio">
           <p>$40</p>
-          <button class="btn btn-rojo">receta</button>
+          <button id="openModalBtn8" class="btn btn-rojo">receta</button>
+        </div>
+        <!-- MODAL PRINCIPAL N°8-->
+        <div id="myModal8" class="modal">
+          <div class="modal-content">
+            <span class="close8">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion8" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text8">2 corazones de res</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion8" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text8">1 cucharada de ají molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion8" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text8">2 cucharadas de ají panca molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion8" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text8">1/2 cucharadita de comino en polvo</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion8" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text8">2 cucharadas de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion8" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text8">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion8" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text8">Vinagre, cantidad suficiente para cubrirlos</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1. Limpiar los corazones de nervios y cortarlos en torozos pequeños.</p>
+            <p>2. Colocar en un tazón los corazones con sal, pimienta, ajos, comino y los ajíes.</p>
+            <p>3. Cubrir con vinagre. Dejar macerar de un día para otro. </p>
+            <p>4. Al momento de la preparacción escurrir los trozos de corazón y colocarlos en cañitas o alambres (pueden ir de 4 a 6 porciones).</p>
+            <p>5. Cocer a la brasa y con una brocheta de panca de cochlo, ir impregnando los ingredientes macerados</p>
+            <p>6. Servir acompañados de choclo y listo.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <a id="downloadPdfLink8" class="btn btn-rojo">Descargar PDF</a>
+          </div>
         </div>
       </div>
-
+      <!-- PLATILLO PRINCIPAL 3-->
+      <div class="platillo" data-platillos="principales">
+        <img data-src="images/pasta1.webp" alt="principales">
+        <h2>Principal 3</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button id="openModalBtn9" class="btn btn-rojo">receta</button>
+        </div>
+        <!-- MODAL PRINCIPAL N°8-->
+        <div id="myModal9" class="modal">
+          <div class="modal-content">
+            <span class="close9">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion9" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text8">2 corazones de res</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion9" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text9">1 cucharada de ají molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion9" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text9">2 cucharadas de ají panca molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion9" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text9">1/2 cucharadita de comino en polvo</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion9" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text9">2 cucharadas de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion9" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text9">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion9" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text9">Vinagre, cantidad suficiente para cubrirlos</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1. Limpiar los corazones de nervios y cortarlos en torozos pequeños.</p>
+            <p>2. Colocar en un tazón los corazones con sal, pimienta, ajos, comino y los ajíes.</p>
+            <p>3. Cubrir con vinagre. Dejar macerar de un día para otro. </p>
+            <p>4. Al momento de la preparacción escurrir los trozos de corazón y colocarlos en cañitas o alambres (pueden ir de 4 a 6 porciones).</p>
+            <p>5. Cocer a la brasa y con una brocheta de panca de cochlo, ir impregnando los ingredientes macerados</p>
+            <p>6. Servir acompañados de choclo y listo.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <a id="downloadPdfLink9" class="btn btn-rojo">Descargar PDF</a>
+          </div>
+        </div>
+      </div>
+      <!-- PLATILLO PRINCIPAL 4-->
+      <div class="platillo" data-platillos="principales">
+        <img data-src="images/pasta1.webp" alt="principales">
+        <h2>Principal 4</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button id="openModalBtn10" class="btn btn-rojo">receta</button>
+        </div>
+         <!-- MODAL PRINCIPAL N°10: -->
+        <div id="myModal10" class="modal">
+          <div class="modal-content">
+            <span class="close10">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion10" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text10">2 corazones de res</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion10" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text10">1 cucharada de ají molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion10" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text10">2 cucharadas de ají panca molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion10" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text10">1/2 cucharadita de comino en polvo</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion10" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text10">2 cucharadas de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion10" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text10">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion10" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text10">Vinagre, cantidad suficiente para cubrirlos</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1. Limpiar los corazones de nervios y cortarlos en torozos pequeños.</p>
+            <p>2. Colocar en un tazón los corazones con sal, pimienta, ajos, comino y los ajíes.</p>
+            <p>3. Cubrir con vinagre. Dejar macerar de un día para otro. </p>
+            <p>4. Al momento de la preparacción escurrir los trozos de corazón y colocarlos en cañitas o alambres (pueden ir de 4 a 6 porciones).</p>
+            <p>5. Cocer a la brasa y con una brocheta de panca de cochlo, ir impregnando los ingredientes macerados</p>
+            <p>6. Servir acompañados de choclo y listo.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <a id="downloadPdfLink10" class="btn btn-rojo">Descargar PDF</a>
+          </div>
+        </div>
+      </div>
+      <!-- PLATILLO PRINCIPAL 5-->
+      <div class="platillo" data-platillos="principales">
+        <img data-src="images/pasta1.webp" alt="principales">
+        <h2>Principal 5</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button id="openModalBtn11" class="btn btn-rojo">receta</button>
+        </div>
+        <!-- MODAL PRINCIPAL N°11-->
+        <div id="myModal11" class="modal">
+          <div class="modal-content">
+            <span class="close11">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion11" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text11">2 corazones de res</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion11" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text11">1 cucharada de ají molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion11" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text11">2 cucharadas de ají panca molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion11" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text11">1/2 cucharadita de comino en polvo</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion11" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text11">2 cucharadas de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion11" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text11">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion11" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text11">Vinagre, cantidad suficiente para cubrirlos</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1. Limpiar los corazones de nervios y cortarlos en torozos pequeños.</p>
+            <p>2. Colocar en un tazón los corazones con sal, pimienta, ajos, comino y los ajíes.</p>
+            <p>3. Cubrir con vinagre. Dejar macerar de un día para otro. </p>
+            <p>4. Al momento de la preparacción escurrir los trozos de corazón y colocarlos en cañitas o alambres (pueden ir de 4 a 6 porciones).</p>
+            <p>5. Cocer a la brasa y con una brocheta de panca de cochlo, ir impregnando los ingredientes macerados</p>
+            <p>6. Servir acompañados de choclo y listo.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <a id="downloadPdfLink11" class="btn btn-rojo">Descargar PDF</a>
+          </div>
+        </div>
+      </div>
+      <!-- PLATILLO PRINCIPAL 6-->
+      <div class="platillo" data-platillos="principales">
+        <img data-src="images/pasta1.webp" alt="principales">
+        <h2>Principal 6</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button id="openModalBtn12" class="btn btn-rojo">receta</button>
+        </div>
+        <!-- MODAL PRINCIPAL N°12-->
+        <div id="myModal12" class="modal">
+          <div class="modal-content">
+            <span class="close12">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion12" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text12">2 corazones de res</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion12" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text12">1 cucharada de ají molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion12" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text12">2 cucharadas de ají panca molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion12" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text12">1/2 cucharadita de comino en polvo</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion12" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text12">2 cucharadas de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion12" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text12">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion12" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text12">Vinagre, cantidad suficiente para cubrirlos</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1. Limpiar los corazones de nervios y cortarlos en torozos pequeños.</p>
+            <p>2. Colocar en un tazón los corazones con sal, pimienta, ajos, comino y los ajíes.</p>
+            <p>3. Cubrir con vinagre. Dejar macerar de un día para otro. </p>
+            <p>4. Al momento de la preparacción escurrir los trozos de corazón y colocarlos en cañitas o alambres (pueden ir de 4 a 6 porciones).</p>
+            <p>5. Cocer a la brasa y con una brocheta de panca de cochlo, ir impregnando los ingredientes macerados</p>
+            <p>6. Servir acompañados de choclo y listo.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <a id="downloadPdfLink12" class="btn btn-rojo">Descargar PDF</a>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------    PLATILLOS PRINCIPALES ------------------------------------ -->
+      <!-- PLATILLO POSTRE 1-->
       <div class="platillo" data-platillos="postre">
-        <img data-src="images/postres1.webp" alt="principales">
-        <h2>Quinoa</h2>
+        <img data-src="images/postres1.webp" alt="postre">
+        <h2>Postre 1</h2>
         <p>Quinua, cerezas, tomate</p>
         <div class="precio">
           <p>$40</p>
-          <button class="btn btn-rojo">receta</button>
+          <button id="openModalBtn13" class="btn btn-rojo">receta</button>
+        </div>
+        <!-- MODAL POSTRE N°13 -->
+        <div id="myModal13" class="modal">
+          <div class="modal-content">
+            <span class="close13">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion13" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text13">2 corazones de res</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion13" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text13">1 cucharada de ají molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion13" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text13">2 cucharadas de ají panca molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion13" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text13">1/2 cucharadita de comino en polvo</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion13" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text13">2 cucharadas de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion13" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text13">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion13" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text13">Vinagre, cantidad suficiente para cubrirlos</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1. Limpiar los corazones de nervios y cortarlos en torozos pequeños.</p>
+            <p>2. Colocar en un tazón los corazones con sal, pimienta, ajos, comino y los ajíes.</p>
+            <p>3. Cubrir con vinagre. Dejar macerar de un día para otro. </p>
+            <p>4. Al momento de la preparacción escurrir los trozos de corazón y colocarlos en cañitas o alambres (pueden ir de 4 a 6 porciones).</p>
+            <p>5. Cocer a la brasa y con una brocheta de panca de cochlo, ir impregnando los ingredientes macerados</p>
+            <p>6. Servir acompañados de choclo y listo.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <a id="downloadPdfLink13" class="btn btn-rojo">Descargar PDF</a>
+          </div>
         </div>
       </div>
+       <!-- PLATILLO POSTRE 2-->
       <div class="platillo" data-platillos="postre">
         <img data-src="images/postres2.webp" alt="principales">
-        <h2>Quinoa</h2>
+        <h2>Postre 2</h2>
         <p>Quinua, cerezas, tomate</p>
         <div class="precio">
           <p>$40</p>
-          <button class="btn btn-rojo">receta</button>
+          <button id="openModalBtn14" class="btn btn-rojo">receta</button>
+        </div>
+        <!-- MODAL POSTRE N° 14 -->
+        <div id="myModal14" class="modal">
+          <div class="modal-content">
+            <span class="close14">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion14" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text14">2 corazones de res</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion14" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text14">1 cucharada de ají molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion14" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text14">2 cucharadas de ají panca molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion14" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text14">1/2 cucharadita de comino en polvo</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion14" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text14">2 cucharadas de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion14" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text14">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion14" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text14">Vinagre, cantidad suficiente para cubrirlos</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1. Limpiar los corazones de nervios y cortarlos en torozos pequeños.</p>
+            <p>2. Colocar en un tazón los corazones con sal, pimienta, ajos, comino y los ajíes.</p>
+            <p>3. Cubrir con vinagre. Dejar macerar de un día para otro. </p>
+            <p>4. Al momento de la preparacción escurrir los trozos de corazón y colocarlos en cañitas o alambres (pueden ir de 4 a 6 porciones).</p>
+            <p>5. Cocer a la brasa y con una brocheta de panca de cochlo, ir impregnando los ingredientes macerados</p>
+            <p>6. Servir acompañados de choclo y listo.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <a id="downloadPdfLink14" class="btn btn-rojo">Descargar PDF</a>
+          </div>
         </div>
       </div>
+       <!-- PLATILLO POSTRE 3-->
       <div class="platillo" data-platillos="postre">
         <img data-src="images/postres3.webp" alt="principales">
-        <h2>Quinoa</h2>
+        <h2>Postre 3</h2>
         <p>Quinua, cerezas, tomate</p>
         <div class="precio">
           <p>$40</p>
-          <button class="btn btn-rojo">receta</button>
+          <button id="openModalBtn15" class="btn btn-rojo">receta</button>
+        </div>
+        <!-- MODAL POSTRE N° 15 -->
+        <div id="myModal15" class="modal">
+          <div class="modal-content">
+            <span class="close15">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion15" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text15">2 corazones de res</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion15" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text15">1 cucharada de ají molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion15" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text15">2 cucharadas de ají panca molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion15" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text15">1/2 cucharadita de comino en polvo</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion15" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text15">2 cucharadas de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion15" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text15">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion15" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text15">Vinagre, cantidad suficiente para cubrirlos</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1. Limpiar los corazones de nervios y cortarlos en torozos pequeños.</p>
+            <p>2. Colocar en un tazón los corazones con sal, pimienta, ajos, comino y los ajíes.</p>
+            <p>3. Cubrir con vinagre. Dejar macerar de un día para otro. </p>
+            <p>4. Al momento de la preparacción escurrir los trozos de corazón y colocarlos en cañitas o alambres (pueden ir de 4 a 6 porciones).</p>
+            <p>5. Cocer a la brasa y con una brocheta de panca de cochlo, ir impregnando los ingredientes macerados</p>
+            <p>6. Servir acompañados de choclo y listo.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <a id="downloadPdfLink15" class="btn btn-rojo">Descargar PDF</a>
+          </div>
         </div>
       </div>
-
+       <!-- PLATILLO POSTRE 4-->
+       <div class="platillo" data-platillos="postre">
+        <img data-src="images/postres3.webp" alt="principales">
+        <h2>Postre 4</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button id="openModalBtn16" class="btn btn-rojo">receta</button>
+        </div>
+        <!-- MODAL POSTRE N° 16 -->
+        <div id="myModal16" class="modal">
+          <div class="modal-content">
+            <span class="close16">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion16" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text16">2 corazones de res</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion16" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text16">1 cucharada de ají molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion16" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text16">2 cucharadas de ají panca molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion16" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text16">1/2 cucharadita de comino en polvo</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion16" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text16">2 cucharadas de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion16" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text16">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion16" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text16">Vinagre, cantidad suficiente para cubrirlos</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1. Limpiar los corazones de nervios y cortarlos en torozos pequeños.</p>
+            <p>2. Colocar en un tazón los corazones con sal, pimienta, ajos, comino y los ajíes.</p>
+            <p>3. Cubrir con vinagre. Dejar macerar de un día para otro. </p>
+            <p>4. Al momento de la preparacción escurrir los trozos de corazón y colocarlos en cañitas o alambres (pueden ir de 4 a 6 porciones).</p>
+            <p>5. Cocer a la brasa y con una brocheta de panca de cochlo, ir impregnando los ingredientes macerados</p>
+            <p>6. Servir acompañados de choclo y listo.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <a id="downloadPdfLink16" class="btn btn-rojo">Descargar PDF</a>
+          </div>
+        </div>
+      </div>
+       <!-- PLATILLO POSTRE 5-->
+      <div class="platillo" data-platillos="postre">
+        <img data-src="images/postres3.webp" alt="principales">
+        <h2>Postre 5</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button id="openModalBtn17" class="btn btn-rojo">receta</button>
+        </div>
+        <!-- MODAL POSTRE N° 17 -->
+        <div id="myModal17" class="modal">
+          <div class="modal-content">
+            <span class="close17">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion17" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text17">2 corazones de res</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion17" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text17">1 cucharada de ají molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion17" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text17">2 cucharadas de ají panca molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion17" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text17">1/2 cucharadita de comino en polvo</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion17" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text17">2 cucharadas de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion17" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text17">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion17" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text17">Vinagre, cantidad suficiente para cubrirlos</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1. Limpiar los corazones de nervios y cortarlos en torozos pequeños.</p>
+            <p>2. Colocar en un tazón los corazones con sal, pimienta, ajos, comino y los ajíes.</p>
+            <p>3. Cubrir con vinagre. Dejar macerar de un día para otro. </p>
+            <p>4. Al momento de la preparacción escurrir los trozos de corazón y colocarlos en cañitas o alambres (pueden ir de 4 a 6 porciones).</p>
+            <p>5. Cocer a la brasa y con una brocheta de panca de cochlo, ir impregnando los ingredientes macerados</p>
+            <p>6. Servir acompañados de choclo y listo.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <a id="downloadPdfLink17" class="btn btn-rojo">Descargar PDF</a>
+          </div>
+        </div>
+      </div>
+       <!-- PLATILLO POSTRE 6-->
+      <div class="platillo" data-platillos="postre">
+        <img data-src="images/postres3.webp" alt="principales">
+        <h2>Postre 6</h2>
+        <p>Quinua, cerezas, tomate</p>
+        <div class="precio">
+          <p>$40</p>
+          <button id="openModalBtn18" class="btn btn-rojo">receta</button>
+        </div>
+        <!-- MODAL POSTRE N° 18 -->
+        <div id="myModal18" class="modal">
+          <div class="modal-content">
+            <span class="close18">&times;</span>
+            <h2>Ingredientes</h2>
+            <label>
+              <input type="radio" name="opcion18" class="opcionRadio" value="opcion1">
+              <span class="opcionText" id="opcion1Text18">2 corazones de res</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion18" class="opcionRadio" value="opcion2">
+              <span class="opcionText" id="opcion2Text18">1 cucharada de ají molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion18" class="opcionRadio" value="opcion3">
+              <span class="opcionText" id="opcion3Text18">2 cucharadas de ají panca molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion18" class="opcionRadio" value="opcion4">
+              <span class="opcionText" id="opcion4Text18">1/2 cucharadita de comino en polvo</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion18" class="opcionRadio" value="opcion5">
+              <span class="opcionText" id="opcion5Text18">2 cucharadas de ajo molido</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion18" class="opcionRadio" value="opcion6">
+              <span class="opcionText" id="opcion6Text18">Sal y pimienta al gusto</span>
+            </label>
+            <label>
+              <input type="radio" name="opcion18" class="opcionRadio" value="opcion7">
+              <span class="opcionText" id="opcion7Text18">Vinagre, cantidad suficiente para cubrirlos</span>
+            </label>
+            <h2>Preparación</h2>
+            <p>1. Limpiar los corazones de nervios y cortarlos en torozos pequeños.</p>
+            <p>2. Colocar en un tazón los corazones con sal, pimienta, ajos, comino y los ajíes.</p>
+            <p>3. Cubrir con vinagre. Dejar macerar de un día para otro. </p>
+            <p>4. Al momento de la preparacción escurrir los trozos de corazón y colocarlos en cañitas o alambres (pueden ir de 4 a 6 porciones).</p>
+            <p>5. Cocer a la brasa y con una brocheta de panca de cochlo, ir impregnando los ingredientes macerados</p>
+            <p>6. Servir acompañados de choclo y listo.<span class="rojo">¡Llegó el momento de servir!</span></p>
+            <a id="downloadPdfLink18" class="btn btn-rojo">Descargar PDF</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- FOOTER-->
