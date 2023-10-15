@@ -94,10 +94,15 @@
     font-size: 2.5rem;
   }
   
-  h3,
+  h3{
+    font-family: var(--titulos);
+    font-size: 1.8rem;
+    padding: 4px;
+  }
   p,
   a {
     font-family: var(--parrafos);
+    font-size: 1.5rem;
   }
   
   img {
@@ -209,9 +214,9 @@
     height: 100%;
   }
   
-  /* ABOUT SECTION*/
+   /* ABOUT SECTION*/
   
-  .about {
+   .about {
     display: flex;
     justify-content: space-between;
     padding-top: 8rem;
@@ -280,26 +285,25 @@
     margin-bottom: 2rem;
   
   }
-  
   /* DISEHES*/
-  .btn-verde {
-    color: var(--blanco);
-    text-decoration: none;
-    font-size: 2rem;
-    text-transform: capitalize;
-    background-color: var(--verde);
-    font-family: var(--parrafos);
-    display: inline-block;
-    margin-top: 2rem;
-    border-radius: 5px;
-    padding: 1rem 3rem;
-    margin-bottom: 2rem;
-  }
-  
-  .btn-verde:hover {
-    background-color: var(--rojo);
-  }
-  
+
+.btn-verde {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: capitalize;
+  background-color: var(--verde);
+  font-family: var(--parrafos);
+  display: inline-block;
+  margin-top: 2rem;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+  margin-bottom: 2rem;
+}
+
+.btn-verde:hover {
+  background-color: var(--rojo);
+}
   .dishes {
     padding-top: 5.5rem;
   }
@@ -329,6 +333,14 @@
     margin-bottom: 2rem;
   }
   
+  .platillos
+  .platillo
+  .imagen{
+    width: 320px;
+    height: 260px;
+    object-fit: cover;
+  }
+
   .platillo h2 {
     text-align: center;
     padding: 4px;
@@ -347,7 +359,7 @@
   .precio p{
     font-family: var(--titulos);
   }
-  /* MODAL */
+ /* MODAL */
   /* Estilos para el modal */
   .modal {
     display: none;
@@ -521,7 +533,11 @@
       flex-direction: column;
       justify-content: space-between;
       margin-bottom: 4rem;
+      align-items: center;
+
     }
+
+
   }
   
   @media (max-width: 450px) {
@@ -531,7 +547,7 @@
  
   }
   
-  @media (max-width: 365px) {
+  @media (max-width: 360px) {
     .about-img img {
       width: 90vw;
     }
